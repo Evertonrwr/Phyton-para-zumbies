@@ -1,0 +1,70 @@
+n1 = int(input('N1: '))
+n2 = int(input('N2: '))
+print (f'Total: {n1+n2}')
+
+
+vm = int(input('Valor em metros: '))
+vmm = (vm * 1000)
+print (f'Valor em milímetros: {vmm}')
+
+d = int(input('Quantidade de dias: '))
+m = int(input('Quantidade de minutos: '))
+s = int(input('Quantidade de segundos: '))
+total= d*24*60*60 + m*60 + s
+print (f'Total em segundos: {total}')
+
+
+
+vst = float(input('Valor salário atual: '))
+p = int(input('Porcentagem do aumento: '))
+a = p*vst/100
+ns= a+vst
+print (f'Valor do aumento:R${a}')
+print (f'Novo salário:R${ns}')
+
+
+
+
+pm = float(input('Preço mercadoria: '))
+pd = int(input('Percentual de desconto: '))
+de = pd*pm/100
+npm = pm - de
+print (f'Desconto:R${de}')
+print (f'Novo preço a pagar:R${npm}')
+
+
+dp = float(input('Distância a percorrer: '))
+vm = float(input('Velocidade média: '))
+t = dp/vm
+print (f'Tempo de viagem: {t}km/h')
+
+
+
+c = int(input('Graus c: '))
+f = 9*c/5 + 32
+print (f'Graus em f: {f}°')
+
+
+
+f = float(input('Graus f: '))
+c = (f-32)/1,8
+print (f'Graus em C: {c}°')
+
+
+
+km = float(input('Km percorridos: '))
+dias = int(input('Dias rodados: '))
+pa = dias*60 + km*0,15
+print (f'Preço a pagar: R${pa}')
+
+
+
+qc = int(input('Quantidade de cigarros por dia: '))
+qaf = float(input('Quantidade de anos fumados: '))
+rm = qaf*60*qc*10
+rd = rm/(25*60)
+print (f'Dias perdidos: {rd}')
+
+
+nm = 2**1000000
+print (f'São {len(str(nm))} digitos')

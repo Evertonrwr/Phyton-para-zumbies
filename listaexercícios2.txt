@@ -1,0 +1,83 @@
+a = int(input('Lado A: '))
+b = int(input('Lado b: '))
+c = int(input('Lado c: '))
+if a>b+c or b>a+c or c>b+a:
+    print('Não pode ser um triângulo, pois um dos lados é maior que a soma dos restantes.')
+elif a==b==c:
+    print('Equilátero')
+elif a==b or b==c or c==a:
+    print('Isóceles')
+else:
+    print('Escaleno')
+
+    
+
+year = int(input('Ano em questão: '))
+if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
+    print('Bissexto')
+else:
+    print('Não é bissexto')
+
+
+vp= int(input('Peso de peixes: '))
+if vp > 50:
+    print (f'Execesso de peso de: {vp-50:.1f}kg')
+    print (f'Multa de: R${(vp-50)*4:.2f}')
+else:
+    print ('Zero')
+
+
+a = int(input('Número 1: '))
+b = int(input('Número 2: '))
+c = int(input('Número 3: '))
+if a>b and a>c:
+    print(f'Maior: {a}')
+elif b>c and b>a :
+    print(f'Maior: {b}')
+else:
+    print(f'Maior: {c}')
+
+
+
+a = int(input('Número 1: '))
+b = int(input('Número 2: '))
+c = int(input('Número 3: '))
+if a>b and a>c:
+    print(f'Maior: {a}')
+elif b>c and b>a :
+    print(f'Maior: {b}')
+else:
+    print(f'Maior: {c}')
+if a<b and a<c:
+    print(f'Menor: {a}')
+elif b<c and b<a :
+    print(f'Menor: {b}')
+else:
+    print(f'Menor: {c}')
+
+
+
+pagemento_horas = float(input(f'Pagamento por hora: '))
+horas_trabalhadas = float(input('Horas trabalhadas: '))
+salario_bruto= pagemento_horas*horas_trabalhadas
+ir= salario_bruto*11/100
+inss= salario_bruto*8/100
+sindicato= salario_bruto*5/100
+salario_liquido= salario_bruto - ir - inss - sindicato
+print(f'Salário bruto: R${salario_bruto:.2f}')
+print(f'IR: R${ir:.2f}')
+print(f'INSS: R${inss:.2f}')
+print(f'Sindicato: R${sindicato:.2f}')
+print (f'Descontos R${ir + inss + sindicato:.2f}')
+print (f'Salário liquído: R${salario_liquido:.2f}')
+
+
+
+m= int(input('Metros: '))
+if m % 54 == 0:
+    latas = m/54
+else:
+    latas = int(m/54)+1
+valor = latas*80
+print('f{latas} latas')
+print('Total: R${valor:.2f}')

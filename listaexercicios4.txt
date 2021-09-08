@@ -1,0 +1,87 @@
+
+
+import random
+lista = random.sample(range(100), 10)
+maior = menor = lista[0]
+k=0
+for i in lista:
+    if lista[k]>maior: maior=lista[k]
+    if lista[k]<menor: menor=lista[k]
+    k=k+1
+print (lista)
+print(f'Maior: {maior}')
+print(f'Menor: {menor}')
+
+
+import random
+lista = random.sample(range(100), 20)
+par=[]
+impar=[]
+for x in lista:
+    if x %2==0:
+        par.append([x])
+    else:
+         impar.append([x])
+print (lista)
+print(f'PAR: {par}')
+print(f'IMPAR: {impar}')
+
+import random
+lista1= random.sample(range(100), 10)
+lista2= random.sample(range(100), 10)
+lista3= []
+k=0
+while k<10:
+    for item in lista1, lista2:
+        lista3.append(item[k])and lista3.append(item[k])
+    k=k+1 
+print(f'Lista1: {lista1}')
+print(f'Lista2: {lista2}')
+print(f'Lista3: {lista3}')
+
+
+lista=[]
+texto= '''The Python Software Foundation and the global Python
+community welcome and encou
+rage participation by everyone. Our community is based on
+mutual respect, tolerance, and encouragement, and we are working to help each other live up
+to these principles. We want our community to be more diverse: whoever you are, and
+whatever your backgrou
+nd, we welcome you '''
+texto=texto.lower()
+texto= texto.replace(',', ' ').replace('.', ' ').replace(':', ' ')
+texto=texto.split()
+for item in texto:
+    if item[0] in 'phyton':
+        lista.append(item)
+    if item[-1] in 'phyton':
+        lista.append(item)
+print(lista)
+
+
+def é_pythonica(p):
+    if len(p) <= 4:
+        return False
+
+    for c in p:
+        if c in 'python':
+            return True
+
+    return False
+lista=[]
+texto= '''The Python Software Foundation and the global Python
+community welcome and encou
+rage participation by everyone. Our community is based on
+mutual respect, tolerance, and encouragement, and we are working to help each other live up
+to these principles. We want our community to be more diverse: whoever you are, and
+whatever your backgrou
+nd, we welcome you '''
+texto=texto.lower()
+texto= texto.replace(',', ' ').replace('.', ' ').replace(':', ' ')
+texto=texto.split()
+k=0
+while k<len(texto):
+    if é_pythonica(texto[k]):
+        lista.append(texto[k])
+    k=k+1
+print(lista)

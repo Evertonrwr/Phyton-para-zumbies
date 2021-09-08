@@ -1,0 +1,38 @@
+nota = float(input('Nota entre 0 e 10: '))
+while nota < 0 or nota > 10:
+    print ('Valor inválido')
+    nota = float(input('Nota entre 0 e 10: '))
+
+
+nome = input('Nome: ')
+senha = input('Senha: ')
+while senha == nome:
+    print ('Senha não pode ser o mesmo nome de usuário')
+    nome = input('Nome: ')
+    senha = input('Senha: ')
+    
+    
+a = 80000
+b= 200000
+n = 0
+while a <= b:
+   a = a + (3*a)/100  
+   b = b + (1.5*b)/100 
+   n = n + 1
+print (n)
+
+
+n= int(input('Número: '))
+a, b = 1
+f=1
+while f <= n-2:
+  a, b = b, a+b
+  f= f+1
+print (b)
+
+
+a = int(input('Valor de a: '))
+b = int(input('Valor de b: '))
+while a%b != 0:
+   a,b= b, a%b
+print( f'mdc = {b}')
